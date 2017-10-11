@@ -17,19 +17,28 @@ import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.FSDirectory;
 
 import com.wyamee.data.NewsArticle;
+import com.wyamee.utils.PropertiesHelper;
 
 public class SearchEngineDataLoader {
 	
 	public static void main(String[] args) throws Exception {
 		
-		File testFile = new File(
-			"/media/tobymostyn/Data Drive/Downloads/Users/jamieprangnell/Desktop/NLA-Sample-File/20161009_The Sunday Times_Reg-ulster_Sup-Sport_Ed-01_117975792.XML");
+		PropertiesHelper properties = PropertiesHelper.getInstance();
 		
-		JAXBContext context = JAXBContext.newInstance(NewsArticle.class);
-		 
-        Unmarshaller unmarshaller = context.createUnmarshaller();
-        NewsArticle article = (NewsArticle) unmarshaller.unmarshal(testFile);
-        System.out.println(article.getSourceMetaData().getPublicationDate());
+		// Create the Lucene index
+		
+		// Get the articles one at a time and write them to the directory
+		NewsArticleLoader articleLoader = new NewsArticleLoader(properties.getNewsArticleDirectory());
+		while (articleLoader.hasNext()) {
+			try {
+				NewsArticle article = articleLoader.next();
+				//System.out.println(article.getArticle().getDescriptiveMetaData().getHeadline());
+			}
+			catch (Exception e) {
+				System.out.println("Error");
+			}
+		}
+		// Close the index
 	}
 	
 	/*private IndexWriter createWriter(String indexDirectory) throws IOException {
