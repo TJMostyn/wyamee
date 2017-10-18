@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Created by Database Input Module 2.0v
+-->
+<!--
+<!DOCTYPE NLAML SYSTEM ".\NLAML_1.2.dtd">
+-->
+<NLAML>
+<SourceMetaData>
+<Property FormalName="Publication_Name" Value="The Sunday Times"/>
+<Property FormalName="Publication_Acronym" Value="STS"/>
+<Property FormalName="Publication_SubSource" Value="Sport"/>
+<Property FormalName="Edition" Value="01"/>
+<Property FormalName="Region" Value="wales"/>
+<Property FormalName="Publication_Date" Value="20161009"/>
+<Property FormalName="Day" Value="Sunday"/>
+<Property FormalName="Page_Section" Value="Sport"/>
+<Property FormalName="Page_Numbers" Value="12"/>
+<Property FormalName="Origin_left" Value="274"/>
+<Property FormalName="Origin_top" Value="37"/>
+<Property FormalName="Width" Value="83"/>
+<Property FormalName="Height" Value="527"/>
+<Property FormalName="Article_Area" Value="367"/>
+<Property FormalName="Article_Percentage" Value="19"/>
+</SourceMetaData>
+<Article>
+<DescriptiveMetadata>
+<HeadLine>Peaty ready to build a legacy</HeadLine>
+<SubHeadLine>Olympic champion tells Craig Lord he is ready to resume hard work after Olympic high</SubHeadLine>
+<ByLine>Craig Lord</ByLine>
+<Author>Craig Lord</Author>
+<Property FormalName="Wordcount" Value="1013"/>
+<Property FormalName="Rights_Status" Value="0"/>
+<Property FormalName="NLAArticleID" Value="117975111"/>
+</DescriptiveMetadata>
+<DataContent>
+<body>
+&#x3C;P&#x3E;SWIMMING YOU can almost hear the roar, so close to the Coliseum is our meeting place in Rome. The lion is a tattoo newly etched from shoulder to elbow and when it comes to modern-day gladiators, Adam Peaty entered the pantheon in Rio in August.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;The 21-year-old from Uttoxeter claimed Britain&#x27;s first men&#x27;s Olympic gold medal in the pool for 28 years in Brazil. His world record of 57.13s gave him the biggest winning margin over 100m breaststroke in Olympic history and was the outstanding performance in the pool at the Games.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;The broad grin and twinkle in the eye is of a boy who got the joke. &#x22;You wouldn&#x27;t believe how many people have asked if I&#x27;m going to retire now,&#x22; says Peaty. &#x22;I&#x27;m like, &#x27;What are you on about?&#x27; This is just the start. This is what I wanted. Now for the legacy.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;That means &#x22;Project 56&#x22; with coach Melanie Marshall: their plan for a sub-57s time that would take the slowest of swimming&#x27;s four strokes to the pace of Mark Spitz&#x27;s butterfly when he set his first world record 50 years ago next year. At 57.13s, Peaty has a 1.3s advantage on the next best, an ocean in two-lap racing.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;His speed and presence strikes fear in those he races before the gun goes off. Had it all sunk in? &#x22;It takes time,&#x22; says Peaty. He had woken that morning in the Waldorf Astoria hotel in Rome, sauntered down to breakfast with his kit sponsor Arena and realised none of it would have been part of his life were it not for his new status.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;I realised that this morning as I sat there,&#x22; he says. &#x22;It was a very proud moment, in a quiet way. Wherever you go, that status comes with you. It&#x27;s the pinnacle of the sport and nobody can ever take that away from you.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;The celebrating and the Uttoxeter homecoming parade done, Peaty is back to the grind. &#x22;It was a great moment for me and I will get a lot of reward from that, which is great. You get invited to so many things.&#x22; He will be discerning in his choices with Marshall and his manager Rob Woodhouse, an Olympic medallist for Australia in the 1980s and the man who also represents Becky Adlington, Peaty&#x27;s mentor.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;The mission is worth more than money, he says. &#x22;We&#x27;re going to see who cares about moving forward together. I&#x27;ll continue to work hard. Soon as I&#x27;m back to the work, I&#x27;m back to it. I&#x27;m not half-hearted at anything.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Marshall calls her charge &#x22;a soldier, a warrior who&#x27;ll go over the top when you ask him to&#x22;. The military approach speaks to Peaty&#x27;s first love. &#x22;The military was what I wanted to do throughout my childhood and into adulthood. If it wasn&#x27;t for swimming, I&#x27;d be in the Royal Marines. I love being in a group. I love pursuing excellence.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Peaty married his two passions before Rio when he &#x22;spent two days with Harry, a man from the SAS, going up and down hills&#x22; trekking for three days.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;The soldier&#x27;s tip? &#x22;Whatever comes in your path, put one foot in front of the other and continue down the path that you&#x27;ve set yourself. That&#x27;s so relatable to sport, it&#x27;s crazy.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;His partnership with Marshall has flourished against the odds of small local pools in Derby and at Repton School, with a few days at Loughborough University&#x27;s world-class facilities each month.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Loughborough is now Peaty&#x27;s permament base, provided Marshall&#x27;s prospect of a coaching job at the centre of excellence is confirmed. Peaty&#x27;s faith in that happening has been strong: he bought his first house in Quorn, a village famous for its hunt and only a short drive from the university pool. And if Marshall does not get the job? &#x22;I&#x27;ll be moving house again,&#x22; he says.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;His targets on the way to Tokyo 2020 are the world championships next year and in 2019, with the Commonwealth Games and European championships in 2018. And 10 years from now, where will he be? &#x22;I&#x27;ve seen a lot of people [excel] and then fade away,&#x22; Peaty says. &#x22;They&#x27;re not using that experience to pass on down the generations. Not just in swimming but the way we do in families at large: how to be a good person, how to get on in life.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;As soon as you switch on the TV these days, you&#x27;ve got swearing, just people being absolute tools and getting famous from it and if kids see that, they&#x27;re going to do the same. We live in a culture where people will do anything to get on YouTube, on Facebook and get noticed through some viral video doing something absolutely stupid.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;He would like, one day, to play a leading role in sports governance,&#x22;maybe in the IOC or Fina, where you can make a difference and change that culture and know what&#x27;s 100% right and you&#x27;d be willing to do anything ... for the athletes and those who work at it every single day&#x22;.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;But first comes the fight back to fitness after his longest break ever. &#x22;I can&#x27;t wait,&#x22; he says. &#x22;It&#x27;s a challenge and that&#x27;s what I love. Me and Mel have work to do. Britain is so strong in breaststroke now, so you had better keep on your toes.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;He has &#x22;much more&#x22; to give &#x97; and he wants Loughborough to use his Olympic medals, his two world titles and seven world records to inspire him and others. &#x22;I want them to put those records up on the wall in the pool like the big US programmes,&#x22; he says. &#x22;Every time I turn my head in training, I want to see those world records up there as a reminder and inspiration. I want to know this is my base, our Coliseum.&#x22;&#x3C;/P&#x3E;&#x3C;info&#x3E;&#x3C;/info&#x3E;
+</body>
+<Photo>
+<Caption>Launch pad: Adam Peaty wants to add to his Olympic success</Caption>
+</Photo>
+</DataContent>
+</Article>
+</NLAML>

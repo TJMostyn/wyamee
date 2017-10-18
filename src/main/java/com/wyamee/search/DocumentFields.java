@@ -1,0 +1,17 @@
+package com.wyamee.search;
+
+public enum DocumentFields {
+	ID,
+	CONTENT,
+	PHOTO_CAPTION,
+	HEADLINE,
+	SUB_HEADLINE,
+	BYLINE,
+	AUTHOR,
+	PUBLICATION_NAME,
+	EDITION,
+	REGION,
+	PUBLICATION_DATE,
+	PAGE_NUMBER,
+	ARTICLE_PERCENTAGE
+}

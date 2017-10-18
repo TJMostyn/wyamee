@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Created by Database Input Module 2.0v
+-->
+<!--
+<!DOCTYPE NLAML SYSTEM ".\NLAML_1.2.dtd">
+-->
+<NLAML>
+<SourceMetaData>
+<Property FormalName="Publication_Name" Value="The Sunday Times"/>
+<Property FormalName="Publication_Acronym" Value="STS"/>
+<Property FormalName="Publication_SubSource" Value="Sport"/>
+<Property FormalName="Edition" Value="01"/>
+<Property FormalName="Region" Value="wales"/>
+<Property FormalName="Publication_Date" Value="20161009"/>
+<Property FormalName="Day" Value="Sunday"/>
+<Property FormalName="Page_Section" Value="Sport"/>
+<Property FormalName="Page_Numbers" Value="12"/>
+<Property FormalName="Origin_left" Value="12"/>
+<Property FormalName="Origin_top" Value="37"/>
+<Property FormalName="Width" Value="258"/>
+<Property FormalName="Height" Value="402"/>
+<Property FormalName="Article_Area" Value="993"/>
+<Property FormalName="Article_Percentage" Value="53"/>
+</SourceMetaData>
+<Article>
+<DescriptiveMetadata>
+<HeadLine>MYSTERY TOUR</HeadLine>
+<SubHeadLine>A suspect package may finally unravel the truth about Team Sky and their ethics</SubHeadLine>
+<ByLine>David Walsh CHIEF SPORTS WRITER</ByLine>
+<Author>David Walsh</Author>
+<Property FormalName="Wordcount" Value="946"/>
+<Property FormalName="Rights_Status" Value="0"/>
+<Property FormalName="NLAArticleID" Value="117975108"/>
+</DescriptiveMetadata>
+<DataContent>
+<body>
+&#x3C;P&#x3E;On June 12, 2011, the final stage of the Criterium du Dauphine travelled from Pontcharra to La Toussuire in the Rhone Alpes. It was a little over 70 miles, and when Bradley Wiggins reached the summit in 10th place, 10 seconds behind the winner Joaquim Rodriguez, overall victory was secured. Wiggins won by one minute and 26 seconds.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;It was Team Sky&#x27;s biggest victory as an elite racing team. For Wiggins it was another step along the road that would end in him winning the following year&#x27;s Tour de France. That Sunday, Simon Cope, a cycling coach for the GB women&#x27;s team based in Manchester, flew to Geneva, hired a car and travelled to La Toussuire to visit Team Sky.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;According to a story in the Daily Mail last week, Cope was carrying a medical product he had been asked to deliver to the team. It was alleged that after his arrival, Wiggins had a private consultation with Dr Richard Freeman at the back of the team coach.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Asked what happened on that Sunday afternoon, Dave Brailsford said Freeman could not have treated Wiggins after the race because the team coach would have departed by the time Wiggins was clear of his post-race protocols. Brailsford&#x27;s explanation didn&#x27;t add up. On the final day of a race, the team bus hangs around because riders are dispersing in different directions and there&#x27;s no hotel to go to. In any case a video clip emerged of Wiggins doing an interview at the team bus after the race on Sunday afternoon.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Brailsford suggested Cope had come to France to see the GB rider Emma Pooley but she was more than 700 miles away in Spain. In offering explanations that weren&#x27;t credible, Brailsford added to the intrigue surrounding Cope&#x27;s visit to France. Sources at Team Sky insist Cope&#x27;s package contained nothing untoward. That may be the case but the question is obvious and simple. Why couldn&#x27;t Brailsford or someone at Team Sky explain why Cope was asked to travel from Manchester to La Toussuire with a medical product? What was the medical product? Who authorised Cope&#x27;s visit and why could the product not have been bought in a French pharmacy? There are many reasons why Brailsford needed to explain the reason for Cope&#x27;s visit, not least the suspicion that surrounds the sport. Twelve years before, two months before the start of the 1999 Tour de France, US Postal team director Johan Bruyneel asked one of the team&#x27;s soigneurs Emma O&#x27;Reilly to travel from the south of France to Piles in Spain to pick up a medical product and take it to France before handing it on to Lance Armstrong.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;O&#x27;Reilly never knew what the pills were but was sure they weren&#x27;t paracetamol. She met Armstrong in the car park of a McDonald&#x27;s restaurant outside Nice and handed over the drugs.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Brailsford has had ample opportunity to explain what was going on but, so far, there has been nothing that makes sense. There is an irony in Cope&#x27;s visit to Team Sky, the same irony found in the case of Wiggins&#x27; three therapeutic use exemptions (TUEs) in 2011, 2012 and 2013. It is this: Team Sky came into a sport that had a notorious reputation for illicit use of prohibited substances, albeit they arrived at a time when professional cycling seemed intent on fighting doping. In the past month, Sky, its boss Brailsford and its first Tour de France winner Wiggins have suffered reputational damage. The irony is the difficulties have arisen from relationships with people at British Cycling. The problem has come from within.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Riders at Team Sky say that in their experience it is unheard of for a British Cycling coach to travel from England to Europe with a medical product. They don&#x27;t dispute that it happened but insist they knew nothing about it. Among them, there is incredulity at the idea of Cope, a non-medical person, breaking French law by taking a banned product into the country. They don&#x27;t believe that happened.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;There is a belief that whatever the product was, it was something between Wiggins and the doctor who worked most closely with him, Richard Freeman. The presumption is that Brailsford would have had to have known why Cope was travelling from England with a package, as it was at Team Sky&#x27;s behest that the coach made the journey. Cope now works for Wiggins&#x27; cycling team.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Many inside the team question how much Shane Sutton knew about what was happening. He worked with British Cycling and Team Sky in 2010 and 2011 and worked closely with Wiggins. After 2011 he concentrated on his role with the GB track team in Manchester. A number of people inside Team Sky have wondered how he continued to have use of a Team Sky car and remained on the payroll after he had left the team.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Jonathan Tiernan-Locke, a former Sky rider who was banned for two years following anomalies in his biological passport, added to the unanswered questions by alleging in a BBC interview that the painkiller Tramadol was made available by a member of the medical staff to Team GB&#x27;s road racing team at the 2012 world championship road race in Copenhagen, which was won by Mark Cavendish.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Tramadol is legal but many medical and anti-doping personnel disapprove of its use in sport. Team Sky&#x27;s former doctor, Alan Farrell, was against its use by the team and did much to dissuade riders from using it. Within the peloton, Tramadol has been widely used. Tiernan-Locke also told the BBC that he thought Wiggins&#x27; use of triamcinolone TUEs was suspicious and that is a view shared by most. Brailsford still has much explaining to do and unless he starts coming up with credible answers it is difficult to see how he can remain as leader of the world&#x27;s number one cycling team. So far he has been like the man who wants to go to heaven but has only been digging holes.&#x3C;/P&#x3E;&#x3C;info&#x3E;DAVE BRAILSFORD HAS HAD AMPLE OPPORTUNITY TO EXPLAIN WHAT WAS GOING ON&#x3C;/info&#x3E;
+</body>
+<Photo>
+</Photo>
+<Photo>
+<Caption>Man in the middle: Bradley Wiggins has suffered significant reputational damage.over the past few weeks, as has Dave Brailsford, the under-fire boss of Team Sky</Caption>
+</Photo>
+</DataContent>
+</Article>
+</NLAML>

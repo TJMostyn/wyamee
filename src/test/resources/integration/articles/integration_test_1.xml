@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Created by Database Input Module 2.0v
+-->
+<!--
+<!DOCTYPE NLAML SYSTEM ".\NLAML_1.2.dtd">
+-->
+<NLAML>
+<SourceMetaData>
+<Property FormalName="Publication_Name" Value="The Sunday Times"/>
+<Property FormalName="Publication_Acronym" Value="STS"/>
+<Property FormalName="Publication_SubSource" Value="Sport"/>
+<Property FormalName="Edition" Value="01"/>
+<Property FormalName="Region" Value="wales"/>
+<Property FormalName="Publication_Date" Value="20161009"/>
+<Property FormalName="Day" Value="Sunday"/>
+<Property FormalName="Page_Section" Value="Sport"/>
+<Property FormalName="Page_Numbers" Value="12"/>
+<Property FormalName="Origin_left" Value="12"/>
+<Property FormalName="Origin_top" Value="441"/>
+<Property FormalName="Width" Value="258"/>
+<Property FormalName="Height" Value="123"/>
+<Property FormalName="Article_Area" Value="254"/>
+<Property FormalName="Article_Percentage" Value="13"/>
+</SourceMetaData>
+<Article>
+<DescriptiveMetadata>
+<HeadLine>Rio golden boy tracks road to glory</HeadLine>
+<SubHeadLine>Welsh cycling star tells Rob Cole how he hopes to follow in his heroes&#x27; footsteps with Team Sky</SubHeadLine>
+<ByLine>Rob Cole</ByLine>
+<Author>Rob Cole</Author>
+<Property FormalName="Wordcount" Value="632"/>
+<Property FormalName="Rights_Status" Value="0"/>
+<Property FormalName="NLAArticleID" Value="117975070"/>
+</DescriptiveMetadata>
+<DataContent>
+<body>
+&#x3C;P&#x3E;OWAIN DOULL will be a different man when he launches the next phase of his cycling career in Team Sky colours in the 252.5km Paris-Tours race today.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;The Olympic team pursuit gold medallist has made the switch from the track to the roads in much the same way as fellow Welshman Geraint Thomas and former teammate Sir Bradley Wiggins. Now he wants to try to make as big a success of the transition, starting with the one-day race in France.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;As debuts go, it is a soft start for the first Welsh speaker to win an Olympic title, although the first step he had to take was to lose weight. Gone are the powerful thighs that helped propel Team GB to Olympic glory in Rio.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;A far more streamlined 23-year-old joins the seven-man Team Sky team today having transferred from Team Wiggins.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;I know that Brad had to lose 12 kilos when he went off the track on to the roads and I was told I had to shed about seven kilos. You can&#x27;t afford to carry the extra weight when you are covering so many miles over so many days,&#x22; said Doull, who covered 120 training miles moments after starting last weekend&#x27;s Cardiff Half Marathon.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;I was fortunate to spend a week in Rio after the Games, and I was able to eat and drink what I wanted to,&#x22; he said.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;I then had a nice bit of down time at home to see friends, family and catch up with people. I was able to kick back and relax a bit, but for the past week or so I&#x27;ve been back into full-on training.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;Getting back to being an elite athlete again can be hard, but I&#x27;m in pretty good shape again and really excited about riding for Team Sky. The nice thing about riding on the track and the road is they are different events, they present different challenges. It all feels new.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Wiggins described Doull as the &#x22;new &#x27;G&#x27;&#x22;, referring to Geraint Thomas, and he is following in the footsteps of fellow Cardiff riders Thomas and Luke Rowe in joining Sky.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Doull&#x27;s potential on the roads was perfectly illustrated when he finished third overall in the 2015 Tour of Britain. But given that he will only be 27 when the Tokyo Olympics come around won&#x27;t he want to go back to the track? &#x22;To go to the Olympics was a massive achievement, but to win was even bigger,&#x22; Doull said.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;For the next two or three years I&#x27;m going to step away from the track and focus fully on the roads with Sky. I&#x27;ll then kind of see how things lie in the build-up to Tokyo. I&#x27;d like to go back on the track, but four years is a long time away.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;That&#x27;s the plan, but it might all change. It has been a boyhood dream of mine to ride for Sky &#x97; it&#x27;s a good team that nurtures British talent and I think it&#x27;s the right place for me.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;The Paris-Tours race is a nice way to start because it&#x27;s not the biggest race in the world. It&#x27;s also fairly flat so, hopefully, I can do a good job for the team.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;I&#x27;ll try to make a good first impression and just do the basic stuff really. It&#x27;s a mixture of nerves and excitement.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;For someone who got beaten by all the girls when he first took to the track at Maindy Flyers when he was 15, he has come a long way in a short space of time. Just how far he can go with Team Sky remains to be seen, but the pedigree is there.&#x3C;/P&#x3E;&#x3C;info&#x3E;&#x3C;/info&#x3E;
+</body>
+<Photo>
+<Caption>Dream team: Doull is fulfilling a boyhood ambition to ride for Sky</Caption>
+</Photo>
+</DataContent>
+</Article>
+</NLAML>

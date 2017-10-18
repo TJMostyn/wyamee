@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Created by Database Input Module 2.0v
+-->
+<!--
+<!DOCTYPE NLAML SYSTEM ".\NLAML_1.2.dtd">
+-->
+<NLAML>
+<SourceMetaData>
+<Property FormalName="Publication_Name" Value="The Sunday Times"/>
+<Property FormalName="Publication_Acronym" Value="STS"/>
+<Property FormalName="Publication_SubSource" Value="null"/>
+<Property FormalName="Edition" Value="01"/>
+<Property FormalName="Region" Value="wales"/>
+<Property FormalName="Publication_Date" Value="20161009"/>
+<Property FormalName="Day" Value="Sunday"/>
+<Property FormalName="Page_Section" Value="Features"/>
+<Property FormalName="Page_Numbers" Value="1"/>
+<Property FormalName="Origin_left" Value="9"/>
+<Property FormalName="Origin_top" Value="401"/>
+<Property FormalName="Width" Value="149"/>
+<Property FormalName="Height" Value="79"/>
+<Property FormalName="Article_Area" Value="109"/>
+<Property FormalName="Article_Percentage" Value="6"/>
+</SourceMetaData>
+<Article>
+<DescriptiveMetadata>
+<HeadLine>&#x27;Cowboys&#x27; exploit Airbnb boom</HeadLine>
+<SubHeadLine></SubHeadLine>
+<ByLine>Robin Henry and Martina Lees</ByLine>
+<Author>Robin Henry ; Martina Lees</Author>
+<Property FormalName="Wordcount" Value="209"/>
+<Property FormalName="Rights_Status" Value="0"/>
+<Property FormalName="NLAArticleID" Value="117969745"/>
+</DescriptiveMetadata>
+<DataContent>
+<body>
+&#x3C;P&#x3E;HUNDREDS of British homeowners could be breaking planning rules by converting residential properties into virtual hotels to cash in on the Airbnb boom, an investigation by The Sunday Times has found.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Airbnb was billed as a way for people to make extra cash by letting out their spare rooms. However, an investigation has uncovered evidence of widespread abuse of planning laws by Airbnb users, allowing them to take properties out of the already squeezed housing market and turn them into money-making holiday rentals.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Short-let management companies, which have sprung up to cash in on the boom and manage hundreds of Airbnb listings on behalf of landlords, told a reporter seeking to list a room for rent to ignore planning rules and agreed to list the flat even if it broke the leasehold agreement.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;An agent at Veeve, one of the largest operators, boasted that regulations designed to protect the property market were &#x22;universally ignored&#x22;. The company later said landlords seeking to list yearround holiday rentals were not its usual clientele.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;In London, analysis of Airbnb data found more than 13,600 listings for flats and houses available for 90 days or more during the year, potentially exceeding the maximum number of days for which residential properties can be used for &#x22;short lets&#x22;.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Airbnb said the analysis was &#x22;misleading&#x22; because it conflated availability with nights booked.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Full story, pages 10-11&#x3C;/P&#x3E;&#x3C;info&#x3E;&#x3C;/info&#x3E;
+</body>
+</DataContent>
+</Article>
+</NLAML>

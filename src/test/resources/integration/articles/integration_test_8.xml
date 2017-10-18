@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Created by Database Input Module 2.0v
+-->
+<!--
+<!DOCTYPE NLAML SYSTEM ".\NLAML_1.2.dtd">
+-->
+<NLAML>
+<SourceMetaData>
+<Property FormalName="Publication_Name" Value="The Sunday Times"/>
+<Property FormalName="Publication_Acronym" Value="STS"/>
+<Property FormalName="Publication_SubSource" Value="null"/>
+<Property FormalName="Edition" Value="01"/>
+<Property FormalName="Region" Value="wales"/>
+<Property FormalName="Publication_Date" Value="20161009"/>
+<Property FormalName="Day" Value="Sunday"/>
+<Property FormalName="Page_Section" Value="Features"/>
+<Property FormalName="Page_Numbers" Value="1"/>
+<Property FormalName="Origin_left" Value="158"/>
+<Property FormalName="Origin_top" Value="400"/>
+<Property FormalName="Width" Value="48"/>
+<Property FormalName="Height" Value="81"/>
+<Property FormalName="Article_Area" Value="38"/>
+<Property FormalName="Article_Percentage" Value="2"/>
+</SourceMetaData>
+<Article>
+<DescriptiveMetadata>
+<HeadLine>MY DYSLEXIA IS A BLESSING NOT A CURSE ANDREW [...]</HeadLine>
+<SubHeadLine></SubHeadLine>
+<ByLine></ByLine>
+<Author></Author>
+<Property FormalName="Wordcount" Value="22"/>
+<Property FormalName="Rights_Status" Value="0"/>
+<Property FormalName="NLAArticleID" Value="117969746"/>
+</DescriptiveMetadata>
+<DataContent>
+<body>
+&#x3C;P&#x3E;MY DYSLEXIA IS A BLESSING NOT A CURSE ANDREW RT DAVIES ON THE TRUTH BEHIND HIS BREXIT &#x27;GAFFE&#x27; Full story, page 15&#x3C;/P&#x3E;&#x3C;info&#x3E;&#x3C;/info&#x3E;
+</body>
+<Photo>
+</Photo>
+</DataContent>
+</Article>
+</NLAML>

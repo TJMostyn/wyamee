@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlElement;
 public class DataContent {
 
 	private String body;
-	private Photo photo;
+	private Photo photo = new Photo();
 
 	public String getBody() {
 		return body;

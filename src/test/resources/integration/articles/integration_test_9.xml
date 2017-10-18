@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Created by Database Input Module 2.0v
+-->
+<!--
+<!DOCTYPE NLAML SYSTEM ".\NLAML_1.2.dtd">
+-->
+<NLAML>
+<SourceMetaData>
+<Property FormalName="Publication_Name" Value="The Sunday Times"/>
+<Property FormalName="Publication_Acronym" Value="STS"/>
+<Property FormalName="Publication_SubSource" Value="null"/>
+<Property FormalName="Edition" Value="01"/>
+<Property FormalName="Region" Value="wales"/>
+<Property FormalName="Publication_Date" Value="20161009"/>
+<Property FormalName="Day" Value="Sunday"/>
+<Property FormalName="Page_Section" Value="Features"/>
+<Property FormalName="Page_Numbers" Value="1"/>
+<Property FormalName="Origin_left" Value="8"/>
+<Property FormalName="Origin_top" Value="169"/>
+<Property FormalName="Width" Value="197"/>
+<Property FormalName="Height" Value="227"/>
+<Property FormalName="Article_Area" Value="429"/>
+<Property FormalName="Article_Percentage" Value="23"/>
+</SourceMetaData>
+<Article>
+<DescriptiveMetadata>
+<HeadLine>Trump refuses to quit over lewd sex boasts</HeadLine>
+<SubHeadLine></SubHeadLine>
+<ByLine>Toby Harnden WASHINGTON</ByLine>
+<Author>Toby Harnden</Author>
+<Property FormalName="Wordcount" Value="314"/>
+<Property FormalName="Rights_Status" Value="0"/>
+<Property FormalName="NLAArticleID" Value="117969748"/>
+</DescriptiveMetadata>
+<DataContent>
+<body>
+&#x3C;P&#x3E;DONALD TRUMP was battling to save his presidential campaign last night amid calls from senior Republicans for him to step aside as they braced themselves for fresh revelations about his lewd sexual behaviour.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;The crisis in Trump&#x27;s bid for the White House came after the release of bombshell video footage showing him boasting about committing sexual assault and trying to seduce a married television presenter, since identified as Nancy O&#x27;Dell.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;I did try and f*** her. She was married. I moved on her like a bitch but I couldn&#x27;t get there,&#x22; Trump told Billy Bush, a cousin of former president George W Bush and a presenter of the Access Hollywood show. &#x22;When you&#x27;re a star, they let you do it. Grab them by the pussy. You can do anything.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Two years later, in 2007, Trump reportedly tried to have O&#x27;Dell dropped from hosting his Miss USA beauty pageant because she was pregnant.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Trump trails Hillary Clinton, the Democratic nominee, by an average of 4.5 percentage points in polls as he prepares to face her in tonight&#x27;s second presidential debate in St Louis, Missouri.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Paul Ryan, the Speaker of the House of Representatives, cancelled an invitation from Trump to join him at a campaign event yesterday. Mike Pence, his vice-presidential running mate, was initially due to attend in his place, but pulled out. He said: &#x22;I do not condone his remarks and cannot defend them.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Arnold Schwarzenegger, the actor and former California governor, said: &#x22;For the first time since I became a citizen in 1983, I will not vote for the Republican candidate for president.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Trump insisted there was &#x22;zero chance I&#x27;ll quit&#x22;, telling The Wall Street Journal: &#x22;I never, ever, give up.&#x22; Asked about the video he replied: &#x22;People get it. They get life.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;More women, however, are believed to be preparing to come forward with shocking accounts of Trump&#x27;s sexual overtures.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Full story, page 9&#x3C;/P&#x3E;&#x3C;info&#x3E;&#x3C;/info&#x3E;
+</body>
+<Photo>
+<Caption>The television presenter Nancy O&#x27;Dell was the target of crude comments made by Donald Trump and caught on tape. He was forced to apologise yesterday, top left, after a storm of protest</Caption>
+</Photo>
+<Photo>
+</Photo>
+</DataContent>
+</Article>
+</NLAML>

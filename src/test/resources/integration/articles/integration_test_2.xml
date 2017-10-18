@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Created by Database Input Module 2.0v
+-->
+<!--
+<!DOCTYPE NLAML SYSTEM ".\NLAML_1.2.dtd">
+-->
+<NLAML>
+<SourceMetaData>
+<Property FormalName="Publication_Name" Value="The Sunday Times"/>
+<Property FormalName="Publication_Acronym" Value="STS"/>
+<Property FormalName="Publication_SubSource" Value="Sport"/>
+<Property FormalName="Edition" Value="01"/>
+<Property FormalName="Region" Value="wales"/>
+<Property FormalName="Publication_Date" Value="20161002"/>
+<Property FormalName="Day" Value="Sunday"/>
+<Property FormalName="Page_Section" Value="Sport"/>
+<Property FormalName="Page_Numbers" Value="12"/>
+<Property FormalName="Origin_left" Value="227"/>
+<Property FormalName="Origin_top" Value="541"/>
+<Property FormalName="Width" Value="44"/>
+<Property FormalName="Height" Value="24"/>
+<Property FormalName="Article_Area" Value="11"/>
+<Property FormalName="Article_Percentage" Value="1"/>
+</SourceMetaData>
+<Article>
+<DescriptiveMetadata>
+<HeadLine>ON TV TODAY</HeadLine>
+<SubHeadLine></SubHeadLine>
+<ByLine></ByLine>
+<Author></Author>
+<Property FormalName="Wordcount" Value="6"/>
+<Property FormalName="Rights_Status" Value="0"/>
+<Property FormalName="NLAArticleID" Value="117975073"/>
+</DescriptiveMetadata>
+<DataContent>
+<body>
+&#x3C;P&#x3E;World cycling championships Midday, Eurosport 2&#x3C;/P&#x3E;&#x3C;info&#x3E;&#x3C;/info&#x3E;
+</body>
+<Photo>
+</Photo>
+</DataContent>
+</Article>
+</NLAML>

@@ -171,6 +171,9 @@ public class SourceMetaData {
 			numberArray[0] = Integer.parseInt(parts[0]);
 			numberArray[1] = Integer.parseInt(parts[1]);
 		}
+		else {
+			numberArray[0] = Integer.parseInt(numbersAsString);
+		}
 		return numberArray;
 	}
 }

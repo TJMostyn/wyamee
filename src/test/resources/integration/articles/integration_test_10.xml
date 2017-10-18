@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Created by Database Input Module 2.0v
+-->
+<!--
+<!DOCTYPE NLAML SYSTEM ".\NLAML_1.2.dtd">
+-->
+<NLAML>
+<SourceMetaData>
+<Property FormalName="Publication_Name" Value="The Sunday Times"/>
+<Property FormalName="Publication_Acronym" Value="STS"/>
+<Property FormalName="Publication_SubSource" Value="null"/>
+<Property FormalName="Edition" Value="01"/>
+<Property FormalName="Region" Value="wales"/>
+<Property FormalName="Publication_Date" Value="20161009"/>
+<Property FormalName="Day" Value="Sunday"/>
+<Property FormalName="Page_Section" Value="Features"/>
+<Property FormalName="Page_Numbers" Value="5"/>
+<Property FormalName="Origin_left" Value="11"/>
+<Property FormalName="Origin_top" Value="41"/>
+<Property FormalName="Width" Value="305"/>
+<Property FormalName="Height" Value="285"/>
+<Property FormalName="Article_Area" Value="789"/>
+<Property FormalName="Article_Percentage" Value="42"/>
+</SourceMetaData>
+<Article>
+<DescriptiveMetadata>
+<HeadLine>Aged just 8, Sue Townsend saw girl strangled</HeadLine>
+<SubHeadLine></SubHeadLine>
+<ByLine>Richard Brooks ARTS EDITOR</ByLine>
+<Author>Richard Brooks</Author>
+<Property FormalName="Wordcount" Value="640"/>
+<Property FormalName="Rights_Status" Value="0"/>
+<Property FormalName="NLAArticleID" Value="117969753"/>
+</DescriptiveMetadata>
+<DataContent>
+<body>
+&#x3C;P&#x3E;SHE was best known for writing The Secret Diary of Adrian Mole, Aged 13&#xBE;, but Sue Townsend had a terrible secret of her own that has emerged two years after her death.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;As an eight-year-old girl in 1953, the then Susan Johnstone climbed a tree with a couple of friends in a wood near her Leicester home, and watched in horror as a man arrived, pulling a young girl behind him.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Hidden in the tree, the children froze as the man pushed the girl against the tree trunk. &#x22;My memory was that he was dragging her by the throat and he strangled her,&#x22; Townsend recalls in a documentary to be shown on BBC2 on Saturday.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Unable to help the victim, the children waited for the man to leave then &#x22;jumped down over her body&#x22; and ran to town to seek help, says Townsend in The Secret Life of Sue Townsend (Aged 68&#xBE;), which includes footage filmed by a friend in 2005 but never previously broadcast.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Arriving at a sweet shop run by &#x22;a bloke called Mr Gibson&#x22;, Townsend gabbled out her story. &#x22;But he disbelieved us and told us to get out.&#x22; Within days the children were vindicated when police charged Joseph Reynolds, a labourer from Dublin, with the murder of Janet Warner, 12, who was strangled with her own school tie. Reynolds confessed and was hanged five months later.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Although Townsend, who died at the age of 68 in 2014, never drew on the incident directly in her writing, she suggests that it did have a profound influence on her.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;My memory is of me at eight being an adult &#x97; being grown-up, and coping in a grown-up way with things that little children shouldn&#x27;t have to cope with. It is also astonishing how many writers have suffered similar things. It turns you in on yourself. You become very aware of atmosphere. You notice things.&#x22; Townsend&#x27;s widower, Colin Broadway, recalled last week his late wife talking about the incident. &#x22;Sue would tell me what really upset her was that she was not believed by that shopkeeper. She felt this was probably because she came from the wrong side of the tracks.&#x22;&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Townsend, who established herself as one of Britain&#x27;s most renowned comic writers, came from humble roots. Her father was a postman and her mother worked as an assistant in a school canteen. She left school at 15 with no qualifications and married her childhood sweetheart Keith Townsend at the age of 18. Three children followed.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;It was during a boring job at a petrol station that Townsend started to read voraciously, and then began writing secretly at home. Her first husband had no idea what she was up to; she hid her work under the sofa. The marriage soon collapsed. After she met Broadway he encouraged her to write.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;According to the documentary, Townsend&#x27;s eldest son, Sean, once asked his mother why they &#x22;did not go to safari parks like other families&#x22;. She hit on the idea of a complaining adolescent diary and in 1982 the first instalment of Adrian Mole&#x27;s adventures was published to huge success. Sequels and stage adaptations followed.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Over the last 15 years of her life, Townsend&#x27;s health disintegrated. She was first diagnosed with diabetes in the 1980s, she went blind in 2001, and then needed a new kidney, which she received from Sean. She also suffered from degenerative arthritis and major heart problems.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Though she was celebrated as a diarist, Townsend never kept a proper diary of her own. Broadway said she used &#x22;annual appointments diaries in which she also wrote random thoughts and ideas for storylines for her books, like for another Mole&#x22;.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Towards the end of the documentary is a clip from a 1991 short film, Private Parts, which Townsend made for the BBC, looking at English attitudes to bodies and embarrassment.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;She cheerfully talks about her own funeral plans. &#x22;Dear loved ones, keep me away from the undertaker&#x27;s premises. I&#x27;d like to stay at home in my book room.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;&#x22;There&#x27;s a black table that will take a coffin nicely.&#x22;&#x3C;/P&#x3E;&#x3C;info&#x3E;&#x3C;/info&#x3E;
+</body>
+<Photo>
+</Photo>
+<Photo>
+<Caption>The murder of 12-year-old Janet Warner made headlines</Caption>
+</Photo>
+<Photo>
+<Caption>Sue Townsend says she watched, horrified, as an attacker dragged a girl by the throat and strangled her. She told a shopkeeper what had happened but he did not believe her &#x27;probably because she came from the wrong side of the tracks&#x27;</Caption>
+</Photo>
+</DataContent>
+</Article>
+</NLAML>

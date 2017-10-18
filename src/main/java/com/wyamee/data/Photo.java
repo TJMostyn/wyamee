@@ -4,7 +4,7 @@ import javax.xml.bind.annotation.XmlElement;
 
 public class Photo {
 
-	private String caption;
+	private String caption = "";
 
 	public String getCaption() {
 		return caption;

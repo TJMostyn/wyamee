@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Created by Database Input Module 2.0v
+-->
+<!--
+<!DOCTYPE NLAML SYSTEM ".\NLAML_1.2.dtd">
+-->
+<NLAML>
+<SourceMetaData>
+<Property FormalName="Publication_Name" Value="The Sunday Times"/>
+<Property FormalName="Publication_Acronym" Value="STS"/>
+<Property FormalName="Publication_SubSource" Value="Sport"/>
+<Property FormalName="Edition" Value="01"/>
+<Property FormalName="Region" Value="wales"/>
+<Property FormalName="Publication_Date" Value="20161009"/>
+<Property FormalName="Day" Value="Sunday"/>
+<Property FormalName="Page_Section" Value="Sport"/>
+<Property FormalName="Page_Numbers" Value="1"/>
+<Property FormalName="Origin_left" Value="209"/>
+<Property FormalName="Origin_top" Value="436"/>
+<Property FormalName="Width" Value="147"/>
+<Property FormalName="Height" Value="128"/>
+<Property FormalName="Article_Area" Value="170"/>
+<Property FormalName="Article_Percentage" Value="9"/>
+</SourceMetaData>
+<Article>
+<DescriptiveMetadata>
+<HeadLine>City&#x27;s &#xA3;100m full-backs hunt</HeadLine>
+<SubHeadLine></SubHeadLine>
+<ByLine>Duncan Castles</ByLine>
+<Author>Duncan Castles</Author>
+<Property FormalName="Wordcount" Value="422"/>
+<Property FormalName="Rights_Status" Value="0"/>
+<Property FormalName="NLAArticleID" Value="117975771"/>
+</DescriptiveMetadata>
+<DataContent>
+<body>
+&#x3C;P&#x3E;MANCHESTER CITY are to continue their &#x22;money no object&#x22; backing for Pep Guardiola by entering the transfer market to furnish their new manager with as many as four new full-backs. The Premier League leaders&#x27; simultaneous search for two leftbacks and two right-backs is unprecedented in England&#x27;s top tier and could cost more than &#xA3;100m in transfer fees alone.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Though City won their first 10 competitive fixtures under Guardiola and hold a one-point lead at the top of the Premier League, the Catalan&#x27;s refashioned team has demonstrated a fragility in defence, preserving clean sheets against just three opponents.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;Guardiola has identified the fullbacks he inherited at City as a relative weakpoint in his squad, both from a defensive perspective and in their ability to build play from the back &#x97; a key factor in his tactical planning. At Barcelona and Bayern Munich, the double Champions League winning coach asked his full-backs to adopt unconventional positions towards the centre of midfield once their teammates had gained possession of the ball, a tactic he has tried to implement at City with mixed results.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;All four of City&#x27;s senior fullbacks &#x97; Gael Clichy, Bacary Sagna, Pablo Zabaleta and Aleksandar Kolarov &#x97; are over the age of 30. The first three are on contracts that expire at the end of this season, while Kolarov, whom Guardiola has deployed at centreback with mixed results, will be a free agent in 2018. All four were floated on last summer&#x27;s transfer market but ended up remaining at the Manchester club. Among the club&#x27;s targets, Guardiola is known to be an admirer of the Arsenal right-back Hector Bellerin, who at the age of 21 has forged a reputation as the Premier League&#x27;s quickest full- back. The Spain under-21 defender is expected to command a fee in the region of &#xA3;40m. City are also monitoring the development of Bellerin&#x27;s international teammate Jose Luis Gaya. The Valencia left-back is contracted until 2020 with a release clause of &#xA3;45m.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;According to analysis by the International Centre for Sports Studies (CIES), City have already spent in excess of &#xA3;40m more than any other European club on transfer fees this year, with a total spend of about &#xA3;200m. Between 2010 and 2016, CIES calculate that City&#x27;s investment in transfer fees alone amounts to more than &#xA3;900m. At current exchange rates, that is &#xA3;137.8m greater than that invested by Chelsea, the second highest spending club in Europe, over the same period.&#x3C;/P&#x3E;&#x0D;&#x0A;&#x3C;P&#x3E;FOOTBALL REPORTS AND ANALYSIS | PAGES 2-5&#x3C;/P&#x3E;&#x3C;info&#x3E;&#x3C;/info&#x3E;
+</body>
+<Photo>
+<Caption>Gaya: monitored by Guardiola</Caption>
+</Photo>
+</DataContent>
+</Article>
+</NLAML>
