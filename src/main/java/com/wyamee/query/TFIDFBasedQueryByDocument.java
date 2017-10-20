@@ -11,16 +11,22 @@ import com.wyamee.data.NewsArticle;
 import com.wyamee.nlp.CorpusStats;
 import com.wyamee.nlp.NGramExtractor;
 import com.wyamee.nlp.NGramScore;
+import com.wyamee.search.IQueryCreator;
+import com.wyamee.search.SimpleQueryCreator;
 import com.wyamee.utils.MutableInt;
 
 public class TFIDFBasedQueryByDocument implements IQueryByDocument {
 	
+	//TODO: Pass this into the class?
+	private static int NO_QUERY_TERMS = 20;
 	private NGramExtractor ngramExtractor;
 	private CorpusStats corpusStats;
+	private IQueryCreator queryCreator;
 	
 	public TFIDFBasedQueryByDocument() {
 		ngramExtractor = new NGramExtractor();
 		corpusStats = CorpusStats.getInstance();
+		queryCreator = new SimpleQueryCreator();
 	}
 	
 	@Override
@@ -29,13 +35,7 @@ public class TFIDFBasedQueryByDocument implements IQueryByDocument {
 		String content = article.getArticle().getDataContent().getBody();
 		Map<String, MutableInt> termFreq = ngramExtractor.getTermFrequencies(content);
 		List<NGramScore> orderedScores = getOrderedIDFScores(termFreq);
-		for (NGramScore score : orderedScores) {
-			System.out.println(score.getNgram() + ": " + score.getScore());
-		}
-		
-		// Needs to be completed
-		
-		return null;
+		return queryCreator.generate(orderedScores.subList(0, NO_QUERY_TERMS));
 		
 	}
 	

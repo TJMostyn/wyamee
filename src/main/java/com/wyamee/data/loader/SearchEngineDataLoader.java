@@ -22,6 +22,8 @@ import com.wyamee.utils.PropertiesHelper;
 
 public class SearchEngineDataLoader {
 	
+	//TODO: Add logging to this so we know what is going on...
+	
 	public static void main(String[] args) throws Exception {
 		PropertiesHelper properties = PropertiesHelper.getInstance();
 		SearchEngineDataLoader dataLoader = new SearchEngineDataLoader(
