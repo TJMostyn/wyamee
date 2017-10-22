@@ -5,38 +5,20 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.lucene.search.Query;
-
-import com.wyamee.data.NewsArticle;
 import com.wyamee.nlp.CorpusStats;
-import com.wyamee.nlp.NGramExtractor;
 import com.wyamee.nlp.NGramScore;
 import com.wyamee.search.IQueryCreator;
 import com.wyamee.search.SimpleQueryCreator;
 import com.wyamee.utils.MutableInt;
 
-public class TFIDFBasedQueryByDocument implements IQueryByDocument {
-	
-	//TODO: Pass this into the class?
-	private static int NO_QUERY_TERMS = 20;
-	private NGramExtractor ngramExtractor;
+public abstract class TFIDFBasedQueryByDocument implements IQueryByDocument {
+
 	private CorpusStats corpusStats;
 	private IQueryCreator queryCreator;
 	
-	public TFIDFBasedQueryByDocument() {
-		ngramExtractor = new NGramExtractor();
+	protected TFIDFBasedQueryByDocument() {
 		corpusStats = CorpusStats.getInstance();
 		queryCreator = new SimpleQueryCreator();
-	}
-	
-	@Override
-	public Query extract(NewsArticle article) {
-		
-		String content = article.getArticle().getDataContent().getBody();
-		Map<String, MutableInt> termFreq = ngramExtractor.getTermFrequencies(content);
-		List<NGramScore> orderedScores = getOrderedIDFScores(termFreq);
-		return queryCreator.generate(orderedScores.subList(0, NO_QUERY_TERMS));
-		
 	}
 	
 	protected List<NGramScore> getOrderedIDFScores(Map<String, MutableInt> termFreq) {
@@ -49,5 +31,9 @@ public class TFIDFBasedQueryByDocument implements IQueryByDocument {
 		Collections.sort(orderedScores);
 		Collections.reverse(orderedScores);
 		return orderedScores;
+	}
+	
+	protected IQueryCreator getQueryCreator() {
+		return queryCreator;
 	}
 }

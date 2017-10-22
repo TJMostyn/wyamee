@@ -1,6 +1,7 @@
 package com.wyamee.search;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.search.BooleanClause;
@@ -11,6 +12,8 @@ import com.wyamee.nlp.NGramScore;
 
 public class SimpleQueryCreator extends AbstractQueryCreator {
 
+	private static final Logger LOG = Logger.getLogger(SimpleQueryCreator.class.getName());
+	
 	@Override
 	public Query generate(List<NGramScore> ngramScores) {
 		
@@ -25,8 +28,7 @@ public class SimpleQueryCreator extends AbstractQueryCreator {
 					createQuery(ngramScore.getNgram(), DocumentFields.CONTENT), BooleanClause.Occur.SHOULD);
 			}
 			catch (ParseException e) {
-				//TODO: Log this correctly
-				System.out.println("Error adding query: " + ngramScore.getNgram());
+				LOG.warning("Error adding clause to query for token: " + ngramScore.getNgram());
 			}
 		}
 	    return queryBuilder.build();

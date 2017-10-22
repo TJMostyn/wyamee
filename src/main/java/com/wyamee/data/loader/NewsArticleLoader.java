@@ -24,7 +24,7 @@ public class NewsArticleLoader implements Iterator<NewsArticle> {
 			jaxBContext = JAXBContext.newInstance(NewsArticle.class);
 		}
 		catch (FileNotFoundException | JAXBException e) {
-			throw new NewsArticleLoaderException(e);
+			throw new NewsArticleLoaderException(directory, e);
 		}
 	}
 
@@ -35,12 +35,17 @@ public class NewsArticleLoader implements Iterator<NewsArticle> {
 
 	@Override
 	public NewsArticle next() {
+		File articleName = articleFiles[index++];
 		try {
-			return loadAndMarshallArticle(articleFiles[index++]);
+			return loadAndMarshallArticle(articleName);
 		}
 		catch (JAXBException e) {
-			throw new NewsArticleLoaderException(e);
+			throw new NewsArticleLoaderException(articleName.getName(), e);
 		}
+	}
+	
+	public int getNumberArticles() {
+		return articleFiles.length;
 	}
 	
 	protected File[] discoverArticleFiles(String directory) throws FileNotFoundException {

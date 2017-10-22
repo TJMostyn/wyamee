@@ -29,7 +29,7 @@ public class NewsArticleTestLoader {
 	        return (NewsArticle) unmarshaller.unmarshal(articleFile);
 		}
 		catch (JAXBException e) {
-			throw new NewsArticleLoaderException(e);
+			throw new NewsArticleLoaderException(articleFile.getName(), e);
 		}
 	}
 }

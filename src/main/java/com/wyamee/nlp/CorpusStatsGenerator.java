@@ -3,35 +3,40 @@ package com.wyamee.nlp;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import com.wyamee.data.NewsArticle;
 import com.wyamee.data.loader.NewsArticleLoader;
 import com.wyamee.data.loader.NewsArticleLoaderException;
+import com.wyamee.utils.ArticleStringUtils;
 import com.wyamee.utils.MutableInt;
 import com.wyamee.utils.PropertiesHelper;
 
 public class CorpusStatsGenerator {
 	
-	public static void main(String[] args) {
-		new CorpusStatsGenerator().generate();
-	}
+	private static final Logger LOG = Logger.getLogger(CorpusStatsGenerator.class.getName());
 	
 	public void generate() {
-		
+
 		PropertiesHelper properties = PropertiesHelper.getInstance();
+		LOG.info("Generating corpus stats from sticles in: " + properties.getNewsArticleDirectory());
 		NewsArticleLoader articleLoader = new NewsArticleLoader(properties.getNewsArticleDirectory());
 		
 		NGramExtractor ngramExtractor = new NGramExtractor();
 		Map<String, MutableInt> instanceCounts = new HashMap<>();
 		Map<String, MutableInt> documentCounts = new HashMap<>();
 		int noDocumentsProcessed = 0;
-		
+
+		LOG.info("Looping through " + articleLoader.getNumberArticles() + " articles");
+		List<String> failedArticles = new ArrayList<>();
 		while (articleLoader.hasNext()) {
 			try {
 				NewsArticle article = articleLoader.next();
-				String articleText = getConcatenatedDocumentText(article);
+				String articleText = ArticleStringUtils.getConcatenatedDocumentText(article, true);
 				Map<String, MutableInt> termFrequencies = ngramExtractor.getTermFrequencies(articleText);
 				mergeTermFrequencies(termFrequencies, instanceCounts);
 				
@@ -41,18 +46,19 @@ public class CorpusStatsGenerator {
 				noDocumentsProcessed++;
 			}
 			catch (NewsArticleLoaderException e) {
-				//TODO: Log this error and handle properly
+				failedArticles.add(e.getFileName());
 			}
 		}
+		LOG.warning(failedArticles.size() + " did not unmarshall correctly: " + failedArticles);
 
-		// Convert the document counts to IDF
+		LOG.info("Calculate IDF for each relevant token");
 		Map<String, Double> tokenIDF = new HashMap<>();
 		for (String token : documentCounts.keySet()) {
 			double idf = calculateIDF(documentCounts.get(token).get(), noDocumentsProcessed);
 			tokenIDF.put(token, idf);
 		}
-		
-		// Write the results to a model file (used by CorpusStats)
+
+		LOG.info("Writing results to the model file");
 		try {
 			writeResultsToFile(instanceCounts, tokenIDF);
 		}
@@ -90,16 +96,5 @@ public class CorpusStatsGenerator {
 			MutableInt frequency = docFreq.get(token);
 			MutableInt.incrementMap(allFreq, token, frequency.get());
 		}
-	}
-	
-	private String getConcatenatedDocumentText(NewsArticle article) {
-		StringBuilder builder = new StringBuilder();
-		builder.append(article.getArticle().getDescriptiveMetaData().getHeadline().toLowerCase());
-		builder.append(". ");
-		builder.append(article.getArticle().getDescriptiveMetaData().getSubHeadline().toLowerCase());
-		builder.append(". ");
-		builder.append(article.getArticle().getDataContent().getBody().toLowerCase());
-		builder.append(". ");
-		return builder.toString();
 	}
 }

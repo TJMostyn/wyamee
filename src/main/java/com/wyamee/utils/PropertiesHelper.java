@@ -21,6 +21,8 @@ public class PropertiesHelper {
 
     private String luceneIndexDirectory = "lucene_index_directory";
     private String newsArticleDirectory = "news_article_directory";
+    private String recommendArticleDirectory = "recommend_article_directory";
+    private String recommendArticleResultsFile = "recommend_article_results_file";
     private Properties properties;
     
     private PropertiesHelper() {
@@ -49,6 +51,14 @@ public class PropertiesHelper {
     public String getNewsArticleDirectory() {
         return properties.getProperty(newsArticleDirectory);
     }
+
+	public String getRecommendArticleDirectory() {
+		return properties.getProperty(recommendArticleDirectory);
+	}
+
+	public String getRecommendArticleResultsFile() {
+		return properties.getProperty(recommendArticleResultsFile);
+	}
 
     public static synchronized PropertiesHelper getInstance() {
     	if (instance == null) {

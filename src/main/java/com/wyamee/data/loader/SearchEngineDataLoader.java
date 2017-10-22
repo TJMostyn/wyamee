@@ -4,6 +4,10 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -18,19 +22,10 @@ import org.apache.lucene.store.FSDirectory;
 
 import com.wyamee.data.NewsArticle;
 import com.wyamee.search.DocumentFields;
-import com.wyamee.utils.PropertiesHelper;
 
 public class SearchEngineDataLoader {
 	
-	//TODO: Add logging to this so we know what is going on...
-	
-	public static void main(String[] args) throws Exception {
-		PropertiesHelper properties = PropertiesHelper.getInstance();
-		SearchEngineDataLoader dataLoader = new SearchEngineDataLoader(
-			properties.getLuceneIndexDirectory(), properties.getNewsArticleDirectory());
-		dataLoader.createIndex();
-	}
-	
+	private static final Logger LOG = Logger.getLogger(SearchEngineDataLoader.class.getName());
 	private String luceneIndexDirectory;
 	private String newsArticleDirectory;
 	private boolean isDirectoryClasspath;
@@ -46,30 +41,39 @@ public class SearchEngineDataLoader {
 		this.isDirectoryClasspath = isDirectoryClasspath;
 	}
 	
-	public void createIndex() throws Exception {
+	public void createIndex() throws IOException {
 		
 		IndexWriter indexWriter = null;
 		
-		// Create the Lucene index
 		try {
+			LOG.info("Delete existing lucene directory at: " + luceneIndexDirectory);
+			cleanIndexDirectory(luceneIndexDirectory);
+			
+			LOG.info("Creating the lucene directory at: " + luceneIndexDirectory);
 			indexWriter = createIndexWriter(luceneIndexDirectory);
 		
-			// Get the articles one at a time and write them to the directory
+			LOG.info("Getting all news articles from: " + newsArticleDirectory);
 			NewsArticleLoader articleLoader = new NewsArticleLoader(newsArticleDirectory);
+			
+			LOG.info("Found " + articleLoader.getNumberArticles() + " articles to process");
+			List<String> failedArticles = new ArrayList<>();
 			while (articleLoader.hasNext()) {
 				try {
 					NewsArticle article = articleLoader.next();
 					indexWriter.addDocument(createLuceneDocument(article));
 				}
 				catch (NewsArticleLoaderException e) {
-					//TODO: Log this error and handle properly
+					failedArticles.add(e.getFileName());
 				}
 			}
+			
+			LOG.warning(failedArticles.size() + " did not unmarshall correctly: " + failedArticles);
 		}
-		catch (IOException e) {
-			// Print log message here...
+		catch (IOException | URISyntaxException e) {
+			LOG.log(Level.SEVERE, "Error loading articles: " + e.getMessage(), e);
 		}
 		finally {
+			LOG.info("Successfully created lucene index");
 			if (indexWriter != null) {
 				try {
 					indexWriter.close();
@@ -85,6 +89,16 @@ public class SearchEngineDataLoader {
 	    IndexWriterConfig config = new IndexWriterConfig(new StandardAnalyzer());
 	    IndexWriter writer = new IndexWriter(dir, config);
 	    return writer;
+	}
+	
+	private void cleanIndexDirectory(String indexDirectory) {
+		File indexFolder = new File(indexDirectory);
+		File[] files = indexFolder.listFiles();
+	    if(files != null) {
+	        for(File f: files) {
+	            f.delete();
+	        }
+	    }
 	}
 	
 	private FSDirectory getLoadedDirectory(String indexDirectory) throws IOException, URISyntaxException {

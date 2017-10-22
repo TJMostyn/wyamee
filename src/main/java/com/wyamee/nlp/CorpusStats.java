@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 public class CorpusStats {
 
@@ -22,6 +23,7 @@ public class CorpusStats {
 	protected static String RESOURCES_ROOT = "src/main/resources/";
 	protected static String FILE_PATH = "nlp/models/corpus-stats.csv";
 	
+	private static final Logger LOG = Logger.getLogger(CorpusStats.class.getName());
 	private static CorpusStats instance = null;
 	private Map<String, Statistics> statistics;
 	private double maxIDF;
@@ -62,8 +64,7 @@ public class CorpusStats {
 			while ((line = reader.readLine()) != null) {
 				String[] parts = line.split(",");
 				if (parts.length != 3) {
-					//TODO: need to log this properly
-					System.out.println("Knackered line: " + line);
+					LOG.warning("Unable to read badly formed corpus stats file line: " + line);
 					continue;
 				}
 				

@@ -69,7 +69,6 @@ public class IndexValidator {
 	
 	private void manageOutput(boolean result, String testName) throws Exception {
 		if (! result) {
-			//TODO: This needs to be replaced with logging...
 			System.out.println("Failed integration test for index validator: " + testName);
 		}
 	}
