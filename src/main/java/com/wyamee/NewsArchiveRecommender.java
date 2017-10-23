@@ -2,25 +2,70 @@ package com.wyamee;
 
 import com.wyamee.data.loader.SearchEngineDataLoader;
 import com.wyamee.nlp.CorpusStatsGenerator;
-import com.wyamee.query.ArticleRecommenderGenerator;
 import com.wyamee.query.IQueryByDocument;
 import com.wyamee.query.SimpleTFIDFQueryByDocument;
+import com.wyamee.recommend.ArticleRecommenderGenerator;
 import com.wyamee.utils.PropertiesHelper;
 
 public class NewsArchiveRecommender {
 
-	public static void main(String[] args) {
+	private enum Actions {
+		INDEX,
+		CORPUS,
+		RECOMMEND,
+		QUESTION;
 		
-		//TODO: Handle all of these with command line interactions
-		NewsArchiveRecommender nar = new NewsArchiveRecommender();
-		nar.generateArticleRecommendations();
+		private static Actions load(String actionStr) {
+			for (Actions action : Actions.values()) {
+				if (action.name().equalsIgnoreCase(actionStr)) {
+					return action;
+				}
+			}
+			return null;
+		}
+	}
+	
+	private static NewsArchiveRecommender nar = new NewsArchiveRecommender();
+	
+	public static void main(String[] args) throws Exception {
+		
+		// Error if we only have one command line argument
+		if (args.length != 1) {
+			leaveWithError();
+		}
+		
+		// Error if the action specified is not valid
+		Actions action = Actions.load(args[0]);
+		if (action == null) {
+			leaveWithError();
+		}
+
+		switch (action) {
+			case INDEX:
+				nar.createAndPopulateSearchIndex();
+				break;
+			case CORPUS:
+				nar.generateCorpusStats();
+				break;
+			case RECOMMEND:
+				nar.generateArticleRecommendations();
+				break;
+			case QUESTION:
+				nar.extractQuestionsFromArticles();
+				break;
+		}
+	}
+	
+	private static void leaveWithError() {
+		StringBuilder actions = new StringBuilder();
+		for (Actions action : Actions.values()) {
+			actions.append(action.name() + " ");
+		}
+		String errMsg = "Unable to run program. It takes one of the following arguments: " + actions.toString();
+		throw new IllegalArgumentException(errMsg);
 	}
 	
 	private PropertiesHelper propertiesHelper;
-
-	public static void generateCorpusStats() {
-		new CorpusStatsGenerator().generate();
-	}
 	
 	public NewsArchiveRecommender() {
 		propertiesHelper = PropertiesHelper.getInstance();
@@ -31,15 +76,20 @@ public class NewsArchiveRecommender {
 			propertiesHelper.getLuceneIndexDirectory(), propertiesHelper.getNewsArticleDirectory());
 		dataLoader.createIndex();
 	}
+
+	public void generateCorpusStats() {
+		new CorpusStatsGenerator().generate();
+	}
 	
 	public void generateArticleRecommendations() {
 		
 		String articleDirectory = propertiesHelper.getRecommendArticleDirectory();
 		IQueryByDocument qbdAlgorithm = new SimpleTFIDFQueryByDocument(20);
 		int noRelatedArticles = 10;
+		int recommendDayInterval = propertiesHelper.getRecommendDayInterval();
 		
 		ArticleRecommenderGenerator generator = new ArticleRecommenderGenerator(
-			articleDirectory, qbdAlgorithm, noRelatedArticles);
+			articleDirectory, qbdAlgorithm, noRelatedArticles, recommendDayInterval);
 		generator.generate(propertiesHelper.getRecommendArticleResultsFile());
 	}
 	

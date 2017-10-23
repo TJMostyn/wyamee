@@ -23,6 +23,8 @@ public class PropertiesHelper {
     private String newsArticleDirectory = "news_article_directory";
     private String recommendArticleDirectory = "recommend_article_directory";
     private String recommendArticleResultsFile = "recommend_article_results_file";
+    private String recommendDayInterval = "recommend_day_interval";
+    
     private Properties properties;
     
     private PropertiesHelper() {
@@ -58,6 +60,10 @@ public class PropertiesHelper {
 
 	public String getRecommendArticleResultsFile() {
 		return properties.getProperty(recommendArticleResultsFile);
+	}
+	
+	public int getRecommendDayInterval() {
+		return Integer.parseInt(properties.getProperty(recommendDayInterval));
 	}
 
     public static synchronized PropertiesHelper getInstance() {

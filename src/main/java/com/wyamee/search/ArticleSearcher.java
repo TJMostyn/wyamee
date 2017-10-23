@@ -5,9 +5,12 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.lucene.analysis.core.KeywordAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.queryparser.classic.ParseException;
+import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
@@ -45,8 +48,22 @@ public class ArticleSearcher {
 		}
 		catch (IOException e) {
 			throw new RuntimeSearchException(e);
+		}	
+	}
+	
+	public Document queryById(String articleId) {
+		try {
+			QueryParser qp = new QueryParser(DocumentFields.ID.name(), new KeywordAnalyzer());
+		    Query idQuery = qp.parse(articleId);
+		    TopDocs hits = indexSearcher.search(idQuery, 1);
+		    if (hits.totalHits == 0) {
+		    	return null;
+		    }
+		    return indexSearcher.doc(hits.scoreDocs[0].doc);
 		}
-		
+		catch (IOException | ParseException e) {
+			throw new RuntimeSearchException(e);
+		}
 	}
 	
 	private IndexSearcher createIndexSearcher() throws IOException {

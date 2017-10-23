@@ -37,8 +37,8 @@ public class QueryByDocument {
 		// Create the query and show it
 		for (IQueryByDocument queryByDocument : queriesByDocument) {
 			Query query = queryByDocument.extract(newsArticle);
-			System.out.println(DIVIDER);
-			System.out.println(query.toString());
+			//System.out.println(DIVIDER);
+			//System.out.println(query.toString());
 		
 			// Search and show the results
 			ArticleSearcher searcher = new ArticleSearcher();

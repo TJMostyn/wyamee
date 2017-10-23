@@ -16,6 +16,7 @@ import org.apache.lucene.document.TextField;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.IntPoint;
 import org.apache.lucene.document.LongPoint;
+import org.apache.lucene.document.StoredField;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.FSDirectory;
@@ -67,7 +68,7 @@ public class SearchEngineDataLoader {
 				}
 			}
 			
-			LOG.warning(failedArticles.size() + " did not unmarshall correctly: " + failedArticles);
+			LOG.warning(failedArticles.size() + " articles did not unmarshall correctly: " + failedArticles);
 		}
 		catch (IOException | URISyntaxException e) {
 			LOG.log(Level.SEVERE, "Error loading articles: " + e.getMessage(), e);
@@ -152,6 +153,7 @@ public class SearchEngineDataLoader {
 	    
 	    long time = newsArticle.getSourceMetaData().getPublicationDate().getTime();
 	    document.add(new LongPoint(DocumentFields.PUBLICATION_DATE.name(), time));
+	    document.add(new StoredField(DocumentFields.PUBLICATION_DATE.name(), time)); 
 	    
 	    int pageNumber = newsArticle.getSourceMetaData().getPageNumbers()[0];
 	    document.add(new IntPoint(DocumentFields.PAGE_NUMBER.name(), pageNumber));

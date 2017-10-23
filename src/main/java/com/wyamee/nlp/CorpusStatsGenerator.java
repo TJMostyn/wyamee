@@ -49,7 +49,7 @@ public class CorpusStatsGenerator {
 				failedArticles.add(e.getFileName());
 			}
 		}
-		LOG.warning(failedArticles.size() + " did not unmarshall correctly: " + failedArticles);
+		LOG.warning(failedArticles.size() + " articles did not unmarshall correctly: " + failedArticles);
 
 		LOG.info("Calculate IDF for each relevant token");
 		Map<String, Double> tokenIDF = new HashMap<>();

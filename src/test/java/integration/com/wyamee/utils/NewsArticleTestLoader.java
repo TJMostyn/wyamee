@@ -16,7 +16,7 @@ public class NewsArticleTestLoader {
 	public static PropertiesHelper properties = PropertiesHelper.getInstance();
 	
 	public static NewsArticle loadRandomArticle() {
-		File directory = new File(properties.getNewsArticleDirectory());
+		File directory = new File(properties.getRecommendArticleDirectory());
 		int index = ThreadLocalRandom.current().nextInt(0, directory.listFiles().length);
 		File testFile = directory.listFiles()[index];
 		return loadAndMarshallArticle(testFile);
