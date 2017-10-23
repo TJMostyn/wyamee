@@ -22,6 +22,11 @@ public class NewsArticleTestLoader {
 		return loadAndMarshallArticle(testFile);
 	}
 	
+	public static NewsArticle loadSpecificArticle(String fileName) {
+		File testFile = new File(properties.getRecommendArticleDirectory() + "/" + fileName);
+		return loadAndMarshallArticle(testFile);
+	}
+	
 	protected static NewsArticle loadAndMarshallArticle(File articleFile) {
 		try {
 			JAXBContext jaxBContext = JAXBContext.newInstance(NewsArticle.class);

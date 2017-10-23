@@ -7,8 +7,8 @@ import java.util.Map;
 
 import com.wyamee.nlp.CorpusStats;
 import com.wyamee.nlp.NGramScore;
+import com.wyamee.search.HeadlineBoostQueryCreator;
 import com.wyamee.search.IQueryCreator;
-import com.wyamee.search.SimpleQueryCreator;
 import com.wyamee.utils.MutableInt;
 
 public abstract class TFIDFBasedQueryByDocument implements IQueryByDocument {
@@ -18,7 +18,7 @@ public abstract class TFIDFBasedQueryByDocument implements IQueryByDocument {
 	
 	protected TFIDFBasedQueryByDocument() {
 		corpusStats = CorpusStats.getInstance();
-		queryCreator = new SimpleQueryCreator();
+		queryCreator = new HeadlineBoostQueryCreator();
 	}
 	
 	protected List<NGramScore> getOrderedIDFScores(Map<String, MutableInt> termFreq) {

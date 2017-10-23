@@ -29,6 +29,8 @@ public class QueryByDocument {
 	private static void runQueryByDocument(IQueryByDocument[] queriesByDocument) {
 
 		NewsArticle newsArticle = NewsArticleTestLoader.loadRandomArticle();
+		//NewsArticle newsArticle = NewsArticleTestLoader.loadSpecificArticle(
+			//"20171003_The Sun_Reg-scot_Sup-null_Ed-01_130227001.XML");
 		System.out.println(DIVIDER);
 		System.out.println(newsArticle.getArticle().getDescriptiveMetaData().getHeadline());
 		System.out.println(newsArticle.getArticle().getDescriptiveMetaData().getSubHeadline());
@@ -37,8 +39,8 @@ public class QueryByDocument {
 		// Create the query and show it
 		for (IQueryByDocument queryByDocument : queriesByDocument) {
 			Query query = queryByDocument.extract(newsArticle);
-			//System.out.println(DIVIDER);
-			//System.out.println(query.toString());
+			System.out.println(DIVIDER);
+			System.out.println(query.toString());
 		
 			// Search and show the results
 			ArticleSearcher searcher = new ArticleSearcher();
