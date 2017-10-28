@@ -20,6 +20,30 @@ import com.wyamee.search.DocumentFields;
 
 public class ArticleRecommender {
 
+	public static class ArticleLite {
+		private String articleId;
+		private String headline;
+		private long publicationDate;
+		
+		public ArticleLite(String articleId, String headline, long publicationDate) {
+			this.articleId = articleId;
+			this.headline = headline;
+			this.publicationDate = publicationDate;
+		}
+		
+		public String getArticleId() {
+			return articleId;
+		}
+		
+		public String getHeadline() {
+			return headline;
+		}
+		
+		public long getPublicationDate() {
+			return publicationDate;
+		}
+	}
+	
 	private IQueryByDocument queryByDocument;
 	private ArticleSearcher searcher;
 	
@@ -41,12 +65,14 @@ public class ArticleRecommender {
 		return relatedArticleIds;
 	}
 	
-	public List<String> discover(NewsArticle newsArticle, int noRelatedArticles, int daysInterval) {
+	public List<ArticleLite> discover(NewsArticle newsArticle, int noRelatedArticles, int daysInterval) {
 		
 		Query query = queryByDocument.extract(newsArticle);
 		List<Document> documents = searcher.query(query, noRelatedArticles * 5);
+		
+		//TODO: write this so that we query every month??
 
-		List<String> relatedArticleIds = new ArrayList<>();
+		List<ArticleLite> relatedArticle = new ArrayList<>();
 		List<LocalDate> relatedDates = new ArrayList<>();
 		for (Document document : documents) {
 			long millis = Long.parseLong(document.get(DocumentFields.PUBLICATION_DATE.name()));
@@ -57,13 +83,16 @@ public class ArticleRecommender {
 				continue;
 			}
 			
-			relatedArticleIds.add(document.get(DocumentFields.ID.name()));
+			relatedArticle.add(new ArticleLite(
+				document.get(DocumentFields.ID.name()), 
+				document.get(DocumentFields.HEADLINE.name()), 
+				Long.parseLong(document.get(DocumentFields.PUBLICATION_DATE.name()))));
 			relatedDates.add(articleDate);
 			
-			if (relatedArticleIds.size() == noRelatedArticles) break;
+			if (relatedArticle.size() == noRelatedArticles) break;
 		}
 		
-		return relatedArticleIds;
+		return relatedArticle;
 	}
 	
 	private boolean isFromValidDate(List<LocalDate> relatedDates, LocalDate articleDate, int daysInterval) {

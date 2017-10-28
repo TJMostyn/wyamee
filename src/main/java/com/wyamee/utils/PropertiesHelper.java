@@ -22,7 +22,8 @@ public class PropertiesHelper {
     private String luceneIndexDirectory = "lucene_index_directory";
     private String newsArticleDirectory = "news_article_directory";
     private String recommendArticleDirectory = "recommend_article_directory";
-    private String recommendArticleResultsFile = "recommend_article_results_file";
+    private String articleRecommendResultsFile = "article_recommend_results_file";
+    private String articleQuestionResultsFile = "article_questions_results_file";
     private String recommendDayInterval = "recommend_day_interval";
     
     private Properties properties;
@@ -58,8 +59,12 @@ public class PropertiesHelper {
 		return properties.getProperty(recommendArticleDirectory);
 	}
 
-	public String getRecommendArticleResultsFile() {
-		return properties.getProperty(recommendArticleResultsFile);
+	public String getArticleRecommendResultsFile() {
+		return properties.getProperty(articleRecommendResultsFile);
+	}
+
+	public String getArticleQuestionResultsFile() {
+		return properties.getProperty(articleQuestionResultsFile);
 	}
 	
 	public int getRecommendDayInterval() {

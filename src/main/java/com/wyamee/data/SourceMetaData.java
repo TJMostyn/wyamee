@@ -4,6 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.Logger;
 
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlElement;
@@ -48,6 +49,7 @@ public class SourceMetaData {
 		}
 	}
 
+	private static final Logger LOG = Logger.getLogger(SourceMetaData.class.getName());
 	private static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
 	private List<Property> properties;
 	private String publicationName;
@@ -140,7 +142,7 @@ public class SourceMetaData {
 						publicationDate = dateFormat.parse(property.getValue());
 					}
 					catch (ParseException e) {
-						System.out.println("Unable to parse date with format: " + property.getValue());
+						LOG.warning("Unable to parse date with format: " + property.getValue());
 					}
 					break;
 				case PUBLICATION_DAY:

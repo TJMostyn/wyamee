@@ -10,14 +10,20 @@ import opennlp.tools.util.Span;
 
 public class NamedEntityExtractor {
 
+	private static final String[] PREPOSITIONS = new String[] {
+		"at",
+		"in",
+		"to",
+		"towards",
+		"from"
+	};
+	
 	private NameFinderME personFinder;
-	private NameFinderME locationFinder;
 	private NameFinderME organisationFinder;
 	private Tokenizer tokenizer;
 	
 	public NamedEntityExtractor() {
 		personFinder = ModelBasedNLPFactory.createPersonEntityFinder();
-		locationFinder = ModelBasedNLPFactory.createLocationEntityFinder();
 		organisationFinder = ModelBasedNLPFactory.createOrganisationEntityFinder();
 		
 		try {
@@ -33,7 +39,31 @@ public class NamedEntityExtractor {
 	}
 	
 	public List<String> extractLocations(String content) {
-		return extractEntities(content, locationFinder);
+		List<String> locations = new ArrayList<>();
+		String[] tokens = tokenizer.tokenize(content);
+		outerLabel:
+		for (int i = 0; i < tokens.length; i++) {
+			if (isLocationPreposition(tokens[i])) {
+				StringBuilder location = new StringBuilder();
+				while (i + 1 < tokens.length) {
+					i++;
+					
+					if (tokens[i].substring(0, 1).matches("[A-Z]")) {
+						location.append(tokens[i] + " ");
+					}
+					else {
+						break;
+					}
+				}
+				if (location.length() > 0) {
+					for (String person : extractPeople(content)) {
+						if (person.equalsIgnoreCase(location.toString())) break outerLabel;
+					}
+					locations.add(location.toString().trim());
+				}
+			}
+		}
+		return locations;
 	}
 	
 	public List<String> extractOrganisations(String content) {
@@ -53,5 +83,14 @@ public class NamedEntityExtractor {
 			entities.add(builder.toString().trim());
 		}
 		return entities;
+	}
+	
+	private boolean isLocationPreposition(String potentialPreposition) {
+		for (String preposition : PREPOSITIONS) {
+			if (preposition.equalsIgnoreCase(potentialPreposition)) {
+				return true;
+			}
+		}
+		return false;
 	}
 }

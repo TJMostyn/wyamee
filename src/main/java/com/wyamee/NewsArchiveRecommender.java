@@ -4,6 +4,9 @@ import com.wyamee.data.loader.SearchEngineDataLoader;
 import com.wyamee.nlp.CorpusStatsGenerator;
 import com.wyamee.query.IQueryByDocument;
 import com.wyamee.query.SimpleTFIDFQueryByDocument;
+import com.wyamee.question.ArticleQuestionGenerator;
+import com.wyamee.question.IQuestionExtractor;
+import com.wyamee.question.SimpleQuestionExtractor;
 import com.wyamee.recommend.ArticleRecommenderGenerator;
 import com.wyamee.utils.PropertiesHelper;
 
@@ -29,6 +32,7 @@ public class NewsArchiveRecommender {
 	
 	public static void main(String[] args) throws Exception {
 		
+		args = new String[] { "QUESTION" };
 		// Error if we only have one command line argument
 		if (args.length != 1) {
 			leaveWithError();
@@ -90,10 +94,16 @@ public class NewsArchiveRecommender {
 		
 		ArticleRecommenderGenerator generator = new ArticleRecommenderGenerator(
 			articleDirectory, qbdAlgorithm, noRelatedArticles, recommendDayInterval);
-		generator.generate(propertiesHelper.getRecommendArticleResultsFile());
+		generator.generate(propertiesHelper.getArticleRecommendResultsFile());
 	}
 	
 	public void extractQuestionsFromArticles() {
+		String articleDirectory = propertiesHelper.getNewsArticleDirectory();
+		IQuestionExtractor questionExtractor = new SimpleQuestionExtractor();
+		int noQuestionsPerArticle = 3;
 		
+		ArticleQuestionGenerator generator = new ArticleQuestionGenerator(
+			articleDirectory, questionExtractor, noQuestionsPerArticle);
+		generator.generate(propertiesHelper.getArticleQuestionResultsFile());
 	}
 }

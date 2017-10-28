@@ -35,7 +35,7 @@ public class StopwordTokenFilter implements ITokenFilter {
 	
 	@Override
 	public boolean isFiltered(String token) {
-		return stopwords.contains(token);
+		return stopwords.contains(token.toLowerCase());
 	}
 
 	public static synchronized StopwordTokenFilter getInstance() {

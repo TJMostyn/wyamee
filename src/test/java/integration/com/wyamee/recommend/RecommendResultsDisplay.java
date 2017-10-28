@@ -17,7 +17,7 @@ public class RecommendResultsDisplay {
 		
 		PropertiesHelper propHelper = PropertiesHelper.getInstance();
 		ArticleSearcher searcher = new ArticleSearcher();
-		File file = new File(propHelper.getRecommendArticleResultsFile());
+		File file = new File(propHelper.getArticleRecommendResultsFile());
 		
 		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
 			String line = null;

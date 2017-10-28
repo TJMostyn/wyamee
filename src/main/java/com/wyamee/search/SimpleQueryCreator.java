@@ -16,16 +16,24 @@ public class SimpleQueryCreator extends AbstractQueryCreator {
 	
 	@Override
 	public Query generate(List<NGramScore> ngramScores) {
+		return generate(ngramScores, 1, 1, 1);
+	}
+
+	public Query generate(
+		List<NGramScore> ngramScores, float headlineWeighting, float subHeadlineWeighting, float contentWeighting) {
 		
 		BooleanQuery.Builder queryBuilder = new BooleanQuery.Builder();
 		for (NGramScore ngramScore : ngramScores) {
 			try {
 				queryBuilder.add(
-					createQuery(ngramScore.getNgram(), DocumentFields.HEADLINE), BooleanClause.Occur.SHOULD);
+					createQuery(ngramScore.getNgram() + "^" + headlineWeighting, DocumentFields.HEADLINE), 
+					BooleanClause.Occur.SHOULD);
 				queryBuilder.add(
-					createQuery(ngramScore.getNgram(), DocumentFields.SUB_HEADLINE), BooleanClause.Occur.SHOULD);
+					createQuery(ngramScore.getNgram() + "^" + subHeadlineWeighting, DocumentFields.SUB_HEADLINE), 
+					BooleanClause.Occur.SHOULD);
 				queryBuilder.add(
-					createQuery(ngramScore.getNgram(), DocumentFields.CONTENT), BooleanClause.Occur.SHOULD);
+					createQuery(ngramScore.getNgram() + "^" + contentWeighting, DocumentFields.CONTENT), 
+					BooleanClause.Occur.SHOULD);
 			}
 			catch (ParseException e) {
 				LOG.warning("Error adding clause to query for token: " + ngramScore.getNgram());

@@ -39,12 +39,10 @@ public class SimpleTFIDFQueryByDocument extends TFIDFBasedQueryByDocument {
 				if (seenBigrams < noPermittedBigrams) {
 					returnList.add(orderedScores.get(i));
 					seenBigrams++;
-					System.out.println(ngram);
 				}
 			}
 			else {
 				returnList.add(orderedScores.get(i));
-				System.out.println(ngram);
 			}
 			if (returnList.size() >= noQueryTerms) break;
 		}
